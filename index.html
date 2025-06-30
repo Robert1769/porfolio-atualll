@@ -1,10 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Robert Rodrigues</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio - Robert</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f0f1b;
+      color: #fff;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      border-bottom: 2px solid #00ffff;
+      padding-bottom: 15px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #00ffff;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+    .foto-perfil {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    .foto-perfil img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #00ffff;
+      box-shadow: 0 0 15px #00ffff80;
+      transition: transform 0.3s ease;
+    }
+    .foto-perfil img:hover {
+      transform: scale(1.05);
+    }
+    section {
+      margin-bottom: 30px;
+      background: #1b1b2f;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #00ffff40;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.6s forwards;
+    }
+    section:nth-of-type(2) {
+      animation-delay: 0.2s;
+    }
+    section:nth-of-type(3) {
+      animation-delay: 0.4s;
+    }
+    section:nth-of-type(4) {
+      animation-delay: 0.6s;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    h2 {
+      color: #00ffff;
+      margin-bottom: 10px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 10px;
+    }
+    li {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.3s ease;
+    }
+    li:hover {
+      color: #00ffff;
+      cursor: default;
+    }
+    .material-icons {
+      font-size: 18px;
+      color: #00ffff;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #888;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -12,18 +121,17 @@
     <p>Estudante de Sistemas de Informação</p>
   </header>
 
-  <section class="foto">
-    <img src="Imagem do WhatsApp de 2025-06-29 à(s) 21.25.04_f3baacee.jpg" alt="">
-    <!-- Você pode trocar o link acima por uma imagem sua depois -->
+  <section class="foto-perfil">
+    <img src="Imagem do WhatsApp de 2025-06-29 à(s) 21.25.04_f3baacee.jpg" alt="Foto de Robert Rodrigues" />
   </section>
 
   <section class="contato">
     <h2>Contato</h2>
     <ul>
-      <li>Email: gballahuy@gmail.com</li>
-      <li>WhatsApp: (71) 98226-8068</li>
-      <li>Instagram: <a href="https://instagram.com/Ren_tody" target="_blank">@ren_tody</a></li>
-      <li>GitHub: <a href="https://github.com/SEU_USUARIO" target="_blank">github.com/SEU_USUARIO</a></li>
+      <li><span class="material-icons">email</span> gballahuy@gmail.com</li>
+      <li><span class="material-icons">phone</span> (71) 98226-8068</li>
+      <li><span class="material-icons">camera_alt</span> <a href="https://instagram.com/Ren_tody" target="_blank">@Ren_tody</a></li>
+      <li><span class="material-icons">code</span> <a href="https://github.com/Robert1769" target="_blank">github.com/Robert1769</a></li>
     </ul>
   </section>
 
@@ -38,11 +146,18 @@
 
   <section class="tecnologias">
     <h2>Tecnologias</h2>
-    <p>HTML, CSS, JavaScript, Git, GitHub, SCRUM</p>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Git</li>
+      <li>GitHub</li>
+      <li>SCRUM</li>
+    </ul>
   </section>
 
   <footer>
-    <p>© 2025 - Robert Rodrigues</p>
+    <p>Portfólio criado por Robert Rodrigues • 2025</p>
   </footer>
 </body>
 </html>
